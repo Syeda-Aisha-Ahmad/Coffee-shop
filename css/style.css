@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     outline: none;
     border: none;
     text-decoration: none;
@@ -141,17 +142,21 @@ section {
 /* home */
 
 .home {
-    min-height: 500px;
+    min-height: 570px;
     margin-bottom: 100px;
     display: flex;
     align-items: center;
-    background: url(../image/background.jpg);
+    background-color: #221810;
     background-size: cover;
     background-position: center;
 }
 
 .home .content {
-    max-width: 60rem;
+    width: 50%;
+}
+
+.content-two {
+    width: 50%;
 }
 
 .home .content h3 {
@@ -192,7 +197,7 @@ section {
 
 .about .row .content {
     flex: 1 1 45rem;
-    padding: 8rem;
+    padding: 4rem;
 }
 
 .about .row .content h3 {
@@ -222,14 +227,15 @@ section {
 .menu .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .menu .box-container .box {
-    padding: 5rem;
+    padding: 3rem;
     text-align: center;
     background-color: var(--main-color);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
 }
 
 .menu .box-container .box img {
@@ -270,10 +276,11 @@ section {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 2rem;
+    margin-bottom: 100px;
 }
 
 .contact .heading {
-    margin-bottom: 0;
+    margin-top: 8rem;
 }
 
 .contact .row .image {
@@ -418,6 +425,10 @@ section {
         width: 30%;
         margin: auto;
         text-align: center;
+    }
+
+    .content-two {
+        display: none;
     }
 }
 
